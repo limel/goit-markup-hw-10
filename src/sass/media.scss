@@ -1,0 +1,21 @@
+@media screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/slide4@2x.jpg);
+  }
+
+  .section-title--newsletter::after {
+    background-image: url(../images/title-boreder__footer@2x.png);
+  }
+
+  .footer {
+    background-image: url(../images/footer-background@2x.jpg);
+  }
+
+  .section-title::after {
+    background-image: url(../images/title-boreder@2x.png);
+  }
+
+  .section-title--newsletter::after {
+    background-image: url(../images/title-boreder__footer@2x.png);
+  }
+}

@@ -1,0 +1,47 @@
+.about__title {
+  font-family: $menu-text-font;
+  color: $text-color;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.about__discription {
+  text-align: center;
+  font-family: $title-text-font;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+.about__icon {
+  display: block;
+  width: 66px;
+  height: 66px;
+  margin-bottom: 48px;
+  margin-top: 97px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 80px;
+}
+
+.about__item {
+  flex-basis: calc(100% / 4 - 22.5px);
+  flex-grow: 0;
+  margin-right: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.about__item:last-of-type {
+  margin-right: 0px;
+}

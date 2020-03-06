@@ -1,0 +1,80 @@
+.cards-products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.card-product {
+  position: relative;
+  overflow: hidden;
+  flex-basis: calc(100% / 4 - 22.5px);
+  flex-grow: 0;
+  margin-right: 30px;
+  background-color: $background-card-color;
+  margin-top: 30px;
+
+  height: 322px;
+}
+
+.card-product:nth-child(4n + 4) {
+  margin-right: 0px;
+}
+
+.card-product:nth-child(-n + 4) {
+  margin-top: 0;
+}
+
+.card-product__img {
+  height: 282px;
+  object-fit: contain;
+}
+
+.card-product__discription {
+  font-family: $title-text-font;
+  font-weight: 900;
+  color: $card-text-color;
+  width: 201px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 32px;
+  padding-left: 14px;
+}
+
+.card-product__link {
+  position: relative;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $discription-card-color;
+  text-decoration: none;
+}
+
+.card-product__price {
+  align-items: center;
+  height: 40px;
+  font-family: $title-text-font;
+  background-color: $discription-card-color-opacity;
+  color: $card-text-color;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  width: 54px;
+  text-transform: uppercase;
+}
+
+.card-product:hover .overlay {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.card-product:hover .overlay__item {
+  opacity: 1;
+  transition: opacity 350ms $time-function 350ms;
+}
+
+.card-product:hover .card-product__link,
+.card-product:focus .card-product__link {
+  background-color: $active-color;
+  cursor: pointer;
+}

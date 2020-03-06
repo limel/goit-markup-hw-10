@@ -1,0 +1,158 @@
+.new-collection {
+  height: 676px;
+  background-color: $background-section-color;
+}
+
+.new-collection__list {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.overlay__section {
+  display: flex;
+}
+
+.overlay__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  text-align: center;
+  padding-top: 90px;
+  padding-left: 35px;
+  opacity: 0;
+  transition: opacity 300ms $time-function 300ms;
+}
+
+.overlay {
+  position: absolute;
+  width: 255px;
+  height: 282px;
+  border: 10px solid rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.549);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 350ms $time-function;
+}
+
+.overlay__button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  margin-right: 8px;
+}
+
+.overlay__item > .clock {
+  margin-right: 0;
+}
+
+.overlay__bottom-button {
+  margin-top: 7px;
+  width: 166px;
+  height: 50px;
+  background-color: rgb(50, 50, 50);
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+  text-align: center;
+  opacity: 1;
+}
+
+.overlay__button-icon {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  opacity: 1;
+}
+
+.overlay__button-icon--add-to-card {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+}
+
+.new-collection__img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.new-collection__title {
+  font-family: $title-text-font;
+  font-weight: 900;
+  color: $card-text-color;
+  width: 201px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 32px;
+  padding-left: 14px;
+  text-decoration: none;
+}
+
+.new-collection__link {
+  text-decoration: none;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $discription-card-color;
+
+  position: relative;
+}
+
+.new-collection__price {
+  align-items: center;
+  height: 40px;
+  font-family: $title-text-font;
+  background-color: $discription-card-color-opacity;
+  color: $card-text-color;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  width: 54px;
+  text-transform: uppercase;
+}
+
+.new-collection__item {
+  width: 255px;
+  height: 322px;
+  position: relative;
+  overflow: hidden;
+  margin-right: 30px;
+}
+
+.new-collection__item:last-of-type {
+  margin-right: 0;
+}
+
+.new-collection__img {
+  height: 282px;
+  width: 255px;
+  object-fit: scale-down;
+  background-color: #fff;
+}
+
+.overlay__button:hover,
+.overlay__bottom-button:hover {
+  background-color: $active-color;
+}
+
+.new-collection__item:hover .overlay {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.new-collection__item:hover .new-collection__link {
+  background-color: $active-color;
+}
+
+.new-collection__item:hover .overlay__item {
+  opacity: 1;
+  transition: opacity 350ms $time-function 350ms;
+}

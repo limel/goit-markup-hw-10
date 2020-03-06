@@ -1,0 +1,73 @@
+.footer {
+  background-image: url(../images/footer-background.jpg);
+  background-position: center;
+  border-style: cover;
+  height: 462px;
+}
+
+.newsletter-subscribe__name-form {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: $menu-text-font;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  color: $card-text-color;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.newsletter-subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-right: auto;
+  margin-left: auto;
+  width: 540px;
+  height: 60px;
+  align-items: center;
+}
+
+.newsletter-subscribe__email {
+  display: flex;
+  width: 445px;
+  height: 60px;
+  padding-left: 25px;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  font-family: $menu-text-font;
+  font-weight: 300;
+  text-align: left;
+}
+
+.newsletter-subscribe__submit {
+  width: 95px;
+  height: 60px;
+  background-color: $active-color;
+  border-radius: 0px 5px 5px 0px;
+  border-width: 2px 2px 2px 5px;
+  border-style: solid;
+  border-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.newsletter-subscribe__submit-icon {
+  fill: #fff;
+  width: 48px;
+  height: 48px;
+}
+
+.newsletter-subscribe__submit:hover .newsletter-subscribe__submit-icon,
+.newsletter-subscribe__submit:focus {
+  fill: $active-color;
+}
+
+.newsletter-subscribe__submit:hover,
+.newsletter-subscribe__submit:focus {
+  cursor: pointer;
+  background-color: $info-menu-text;
+}

@@ -1,0 +1,52 @@
+.info-header {
+  background-color: $header-background;
+  height: 100%;
+  animation-name: appearence;
+  animation-duration: 800ms;
+  animation-timing-function: $time-function;
+  animation-fill-mode: backwards;
+}
+
+.info-header__navigation {
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+
+.info-header__link {
+  flex-basis: 12.5%;
+  font-size: 14px;
+  line-height: 0.8;
+  color: $info-menu-text;
+  text-decoration: none;
+}
+
+.info-header__icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-size: cover;
+  margin-right: 5px;
+  width: 17px;
+  height: 17px;
+  padding: 0;
+}
+
+.login-menu {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.login-menu__link {
+  font-family: $menu-text-font;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 0.8;
+  padding-right: 33px;
+  text-decoration: none;
+  color: $info-menu-text;
+}
+
+.login-menu li:last-of-type .login-menu__link {
+  padding-right: 0;
+}
