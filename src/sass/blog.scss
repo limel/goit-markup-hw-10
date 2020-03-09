@@ -56,11 +56,11 @@
   color: $card-text-color;
   justify-content: center;
   align-items: center;
-}
 
-.blog-articl__button:hover,
-.blog-articl__button:focus {
-  filter: brightness(0.9);
-  background-color: rgb(26, 188, 156);
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    filter: brightness(0.9);
+    background-color: rgb(26, 188, 156);
+    cursor: pointer;
+  }
 }

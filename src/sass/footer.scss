@@ -53,21 +53,21 @@
   border-color: white;
   margin: 0;
   padding: 0;
+
+  &:hover .newsletter-subscribe__submit-icon,
+  &:focus .newsletter-subscribe__submit-icon {
+    fill: $active-color;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $info-menu-text;
+  }
 }
 
 .newsletter-subscribe__submit-icon {
   fill: #fff;
   width: 48px;
   height: 48px;
-}
-
-.newsletter-subscribe__submit:hover .newsletter-subscribe__submit-icon,
-.newsletter-subscribe__submit:focus {
-  fill: $active-color;
-}
-
-.newsletter-subscribe__submit:hover,
-.newsletter-subscribe__submit:focus {
-  cursor: pointer;
-  background-color: $info-menu-text;
 }

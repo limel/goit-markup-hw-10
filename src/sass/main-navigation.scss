@@ -3,12 +3,6 @@
   align-items: center;
 }
 
-.main-naviagtion__link:hover,
-.main-naviagtion__link:focus {
-  color: $active-color;
-  cursor: pointer;
-}
-
 .site-logo__link {
   font-family: $title-text-font;
   color: $text-color;
@@ -35,11 +29,11 @@
 
 .main-navigation__site-logo {
   margin: 0;
-}
 
-.main-navigation__site-logo::first-letter {
-  font-weight: 900;
-  color: $active-color;
+  &::first-letter {
+    font-weight: 900;
+    color: $active-color;
+  }
 }
 
 .main-navigation {
@@ -62,6 +56,12 @@
   text-transform: uppercase;
   text-decoration: none;
   padding-right: 30px;
+
+  &:hover,
+  &:focus {
+    color: $active-color;
+    cursor: pointer;
+  }
 }
 
 .main-navigation__list > li:last-of-type .main-naviagtion__link {

@@ -67,6 +67,13 @@
   height: 42px;
   margin-right: auto;
   margin-left: auto;
+
+  &:hover,
+  &:focus {
+    filter: brightness(0.9);
+    background-color: rgb(26, 188, 156);
+    cursor: pointer;
+  }
 }
 
 .hero-content__title--second-part {
@@ -76,11 +83,4 @@
 
 .hero-content__decoration {
   color: $active-color;
-}
-
-.hero-content__button:hover,
-.hero-content__button:focus {
-  filter: brightness(0.9);
-  background-color: rgb(26, 188, 156);
-  cursor: pointer;
 }

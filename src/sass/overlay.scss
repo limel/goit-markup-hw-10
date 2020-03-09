@@ -1,0 +1,79 @@
+.overlay__section {
+  display: flex;
+}
+
+.overlay__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  text-align: center;
+  padding-top: 90px;
+  padding-left: 35px;
+  opacity: 0;
+  transition: opacity 300ms $time-function 300ms;
+}
+
+.overlay {
+  position: absolute;
+  width: 255px;
+  height: 282px;
+  border: 10px solid rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.549);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 350ms $time-function;
+}
+
+.overlay__button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  margin-right: 8px;
+
+  &:hover,
+  &:focus {
+    background-color: $active-color;
+    cursor: pointer;
+  }
+}
+
+.overlay__item > .clock {
+  margin-right: 0;
+}
+
+.overlay__bottom-button {
+  margin-top: 7px;
+  width: 166px;
+  height: 50px;
+  background-color: rgb(50, 50, 50);
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+  text-align: center;
+  opacity: 1;
+
+  &:hover,
+  &:focus {
+    background-color: $active-color;
+    cursor: pointer;
+  }
+}
+
+.overlay__button-icon {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  opacity: 1;
+}
+
+.overlay__button-icon--add-to-card {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+}
